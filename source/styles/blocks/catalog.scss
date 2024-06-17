@@ -1,0 +1,20 @@
+.catalog {
+  padding: 50px 20px 44px;
+}
+
+.catalog__price__slider {
+  margin-bottom: 32px;
+}
+
+.catalog__price__field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog__price__value {
+  width: 118px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px #9070ec solid;
+}
