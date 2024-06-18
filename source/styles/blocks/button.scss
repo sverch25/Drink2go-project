@@ -10,4 +10,18 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: $font-weight-regular;
+  padding: 0;
+}
+
+.catalog__form-button-submit {
+  width: 280px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.catalog__form-button-reset {
+  width: 280px;
+  background-color: #ffffff;
+  color: #7859cf;
 }
