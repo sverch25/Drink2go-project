@@ -5,6 +5,6 @@ noUiSlider.create(sliderElement, {
     min: 0,
     max: 1000,
   },
-  start: [0, 900],
+  start: [25, 900],
   connect: [false, true, false],
 });
