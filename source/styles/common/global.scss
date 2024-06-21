@@ -13,6 +13,12 @@ html {
   margin: 0;
 }
 
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 body {
   position: relative;
   min-height: 100%;
@@ -37,6 +43,7 @@ a {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
