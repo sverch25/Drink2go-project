@@ -145,87 +145,90 @@
         </div>
         <div class="catalog__filter">
           <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="catalog__price">
-              <legend class="catalog__price-title">Цена</legend>
-              <div class="catalog__price__slider" id="slider"></div>
-              <p class="catalog__price__field">
-                <input class="catalog__price__value" type="number" placeholder="0" min="0" max="1000">
-                <svg class="catalog__price-divider" width="8" height="2">
-                  <use href="icons/stack.svg#catalog-divider"></use>
-                </svg>
-                <input class="catalog__price__value" type="number" max="1000" min="0">
-              </p>
-            </fieldset>
-            <fieldset class="catalog__milk">
-              <legend class="catalog__title">Наличие молока</legend>
-              <ul class="catalog__radio-list">
-                <li class="catalog__control-item">
-                  <label class="catalog__control">
-                    <input class="catalog__radio visually-hidden" type="radio" name="selected-milk" value="no-matter"
-                      checked>
-                    <span class="catalog__control-mark"></span>
-                    <span class="catalog__control-label">Неважно</span>
-                  </label>
-                </li>
-                <li class="catalog__control-item">
-                  <label class="catalog__control">
-                    <input class="catalog__radio visually-hidden" type="radio" name="selected-milk" value="only-animal">
-                    <span class="catalog__control-mark"></span>
-                    <span class="catalog__control-label">Только животное</span>
-                  </label>
-                </li>
-                <li class="catalog__control-item">
-                  <label class="catalog__control">
-                    <input class="catalog__radio visually-hidden" type="radio" name="selected-milk" value="only-veg">
-                    <span class="catalog__control-mark"></span>
-                    <span class="catalog__control-label">Только растительное</span>
-                  </label>
-                </li>
-                <li class="catalog__control-item">
-                  <label class="catalog__control">
-                    <input class="catalog__radio visually-hidden" type="radio" name="selected-milk"
-                      value="without-milk">
-                    <span class="catalog__control-mark"></span>
-                    <span class="catalog__control-label">Без молока</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="catalog__country">
-              <legend class="catalog__title">Страна произрастания</legend>
-              <ul class="catalog__toggle-list">
-                <li class="catalog__control-item">
-                  <label class="control__label">
-                    <input class="control__switch" type="checkbox">
-                    <span class="control__switch_toggle"></span>Бразилия
-                  </label>
-                </li>
-                <li class="catalog__control-item">
-                  <label class="control__label">
-                    <input class="control__switch" type="checkbox">
-                    <span class="control__switch_toggle"></span>Эфиопия
-                  </label>
-                </li>
-                <li class="catalog__control-item">
-                  <label class="control__label">
-                    <input class="control__switch" type="checkbox">
-                    <span class="control__switch_toggle"></span>Колумбия
-                  </label>
-                </li>
-                <li class="catalog__control-item">
-                  <label class="control__label">
-                    <input class="control__switch" type="checkbox">
-                    <span class="control__switch_toggle"></span>Коста-Рика
-                  </label>
-                </li>
-                <li class="catalog__control-item">
-                  <label class="control__label">
-                    <input class="control__switch" type="checkbox">
-                    <span class="control__switch_toggle"></span>Перу
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="catalog__fieldset-container">
+              <fieldset class="catalog__price">
+                <legend class="catalog__price-title">Цена</legend>
+                <div class="catalog__price__slider" id="slider"></div>
+                <p class="catalog__price__field">
+                  <input class="catalog__price__value" type="number" placeholder="0" min="0" max="1000">
+                  <svg class="catalog__price-divider" width="8" height="2">
+                    <use href="icons/stack.svg#catalog-divider"></use>
+                  </svg>
+                  <input class="catalog__price__value" type="number" max="1000" min="0">
+                </p>
+              </fieldset>
+              <fieldset class="catalog__milk">
+                <legend class="catalog__title">Наличие молока</legend>
+                <ul class="catalog__radio-list">
+                  <li class="catalog__control-item">
+                    <label class="catalog__control">
+                      <input class="catalog__radio visually-hidden" type="radio" name="selected-milk" value="no-matter"
+                        checked>
+                      <span class="catalog__control-mark"></span>
+                      <span class="catalog__control-label">Неважно</span>
+                    </label>
+                  </li>
+                  <li class="catalog__control-item">
+                    <label class="catalog__control">
+                      <input class="catalog__radio visually-hidden" type="radio" name="selected-milk"
+                        value="only-animal">
+                      <span class="catalog__control-mark"></span>
+                      <span class="catalog__control-label">Только животное</span>
+                    </label>
+                  </li>
+                  <li class="catalog__control-item">
+                    <label class="catalog__control">
+                      <input class="catalog__radio visually-hidden" type="radio" name="selected-milk" value="only-veg">
+                      <span class="catalog__control-mark"></span>
+                      <span class="catalog__control-label">Только растительное</span>
+                    </label>
+                  </li>
+                  <li class="catalog__control-item">
+                    <label class="catalog__control">
+                      <input class="catalog__radio visually-hidden" type="radio" name="selected-milk"
+                        value="without-milk">
+                      <span class="catalog__control-mark"></span>
+                      <span class="catalog__control-label">Без молока</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="catalog__country">
+                <legend class="catalog__title">Страна произрастания</legend>
+                <ul class="catalog__toggle-list">
+                  <li class="catalog__control-item">
+                    <label class="control__label">
+                      <input class="control__switch" type="checkbox" checked>
+                      <span class="control__switch_toggle"></span>Бразилия
+                    </label>
+                  </li>
+                  <li class="catalog__control-item">
+                    <label class="control__label">
+                      <input class="control__switch" type="checkbox">
+                      <span class="control__switch_toggle"></span>Эфиопия
+                    </label>
+                  </li>
+                  <li class="catalog__control-item">
+                    <label class="control__label">
+                      <input class="control__switch" type="checkbox">
+                      <span class="control__switch_toggle"></span>Колумбия
+                    </label>
+                  </li>
+                  <li class="catalog__control-item">
+                    <label class="control__label">
+                      <input class="control__switch" type="checkbox">
+                      <span class="control__switch_toggle"></span>Коста-Рика
+                    </label>
+                  </li>
+                  <li class="catalog__control-item">
+                    <label class="control__label">
+                      <input class="control__switch" type="checkbox">
+                      <span class="control__switch_toggle"></span>Перу
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <div class="catalog__form-container">
               <button class="catalog__form-button-submit button" type="submit">Применить</button>
               <button class="catalog__form-button-reset button" type="reset">Сбросить</button>
@@ -251,8 +254,8 @@
             <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-title">декаф флэт уайт</h3>
             </a>
-            <p class="catalog__item-text">Кофе без кофеина из Эфиопии<br />
-              с натуральным фермерским<br /> молоком</p>
+            <p class="catalog__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
             <div class="catalog__item-container">
               <span class="catalog__item-price">225₽</span>
               <button class="catalog__item-button button" type="button">
@@ -273,8 +276,8 @@
             <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-title">декаф флэт уайт</h3>
             </a>
-            <p class="catalog__item-text">Кофе без кофеина из Эфиопии<br />
-              с натуральным фермерским<br /> молоком</p>
+            <p class="catalog__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
             <div class="catalog__item-container">
               <span class="catalog__item-price">225₽</span>
               <button class="catalog__item-button button" type="button">
@@ -295,8 +298,8 @@
             <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-title">декаф флэт уайт</h3>
             </a>
-            <p class="catalog__item-text">Кофе без кофеина из Эфиопии<br />
-              с натуральным фермерским<br /> молоком</p>
+            <p class="catalog__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
             <div class="catalog__item-container">
               <span class="catalog__item-price">225₽</span>
               <button class="catalog__item-button button" type="button">
@@ -317,8 +320,8 @@
             <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-title">декаф флэт уайт</h3>
             </a>
-            <p class="catalog__item-text">Кофе без кофеина из Эфиопии<br />
-              с натуральным фермерским<br /> молоком</p>
+            <p class="catalog__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
             <div class="catalog__item-container">
               <span class="catalog__item-price">225₽</span>
               <button class="catalog__item-button button" type="button">
@@ -339,8 +342,8 @@
             <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-title">декаф флэт уайт</h3>
             </a>
-            <p class="catalog__item-text">Кофе без кофеина из Эфиопии<br />
-              с натуральным фермерским<br /> молоком</p>
+            <p class="catalog__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
             <div class="catalog__item-container">
               <span class="catalog__item-price">225₽</span>
               <button class="catalog__item-button button" type="button">
@@ -361,8 +364,8 @@
             <a class="catalog__item-link" href="#">
               <h3 class="catalog__item-title">декаф флэт уайт</h3>
             </a>
-            <p class="catalog__item-text">Кофе без кофеина из Эфиопии<br />
-              с натуральным фермерским<br /> молоком</p>
+            <p class="catalog__item-text">Кофе без кофеина из Эфиопии
+              с натуральным фермерским молоком</p>
             <div class="catalog__item-container">
               <span class="catalog__item-price">225₽</span>
               <button class="catalog__item-button button" type="button">
@@ -377,7 +380,7 @@
         <div class="catalog__pagination">
           <ul class="catalog__pagination-list">
             <li class="catalog__pagination-item">
-              <button class="catalog__pagination-button" type="button"></button>
+              <button class="catalog__pagination-button--bck" type="button"></button>
             </li>
             <li class="catalog__pagination-item">
               <button class="catalog__pagination-button" type="button">1</button>
@@ -389,7 +392,7 @@
               <button class="catalog__pagination-button" type="button">3</button>
             </li>
             <li class="catalog__pagination-item">
-              <button class="catalog__pagination-button" type="button"></button>
+              <button class="catalog__pagination-button--fwd" type="button"></button>
             </li>
           </ul>
         </div>

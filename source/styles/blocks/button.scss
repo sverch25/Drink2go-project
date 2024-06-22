@@ -2,7 +2,7 @@
   background-color: #7859cf;
   color: #ffffff;
   min-width: 113px;
-  min-height: 40px;
+  height: 40px;
   border-radius: 4px;
   text-transform: capitalize;
   border: none;
@@ -18,10 +18,27 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: 768px) {
+    width: 137px;
+  }
 }
 
 .catalog__form-button-reset {
   width: 280px;
   background-color: #ffffff;
   color: #7859cf;
+
+  @media (min-width: 768px) {
+    width: 137px;
+  }
+}
+
+.catalog__item-button {
+  height: 36px;
+  width: 141px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
 }
