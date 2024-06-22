@@ -7,6 +7,11 @@
   position: relative;
   padding-left: 20px;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    height: 80px;
+    padding-right: 20px;
+  }
 }
 
 .page-header__container {
@@ -24,12 +29,28 @@
   width: 60px;
   height: 60px;
   flex-shrink: 0;
+
+  @media (min-width: 768px) {
+    height: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .js-toggle-button {
+    display: none;
+  }
 }
 
 .page-header__nav {
   position: absolute;
   top: 61px;
   display: block;
+  background-color: #ffffff;
+  left: 0px;
+
+  @media (min-width: 768px) {
+    position: static;
+  }
 }
 
 .nav__list {
@@ -38,10 +59,15 @@
 
 .active {
   display: block;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
 }
 
 .nav__item {
-  min-width: 320px;
+  width: 320px;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -51,4 +77,23 @@
   align-items: center;
   border-bottom: #f0ebff 1px solid;
   border-top: #f0ebff 1px solid;
+
+  @media (min-width: 768px) {
+    width: fit-content;
+    border: none;
+    padding: 32px 20px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__item.current-page {
+    border-bottom: 2px solid #7859cf;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav__link.current-page {
+    color: #7859cf;
+  }
 }
