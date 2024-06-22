@@ -4,6 +4,10 @@
   @media (min-width: 768px) {
     padding: 60px 20px 100px 20px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 100px 40px 120px;
+  }
 }
 
 .advantages__container {
@@ -33,6 +37,10 @@
     font-size: 42px;
     margin-bottom: 60px;
   }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 80px;
+  }
 }
 
 .advantages__item--speed {
@@ -52,6 +60,16 @@
     justify-content: flex-start;
     align-items: flex-start;
     background-position: unset;
+  }
+
+  @media (min-width: 1440px) {
+    align-items: center;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: 52px 56px;
+    height: 170px;
+    width: 318px;
+    background-position: top;
   }
 }
 
@@ -73,6 +91,16 @@
     align-items: flex-start;
     background-position: unset;
   }
+
+  @media (min-width: 1440px) {
+    align-items: center;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: 52px 56px;
+    height: 170px;
+    width: 317px;
+    background-position: top;
+  }
 }
 
 .advantages__item--energy {
@@ -93,6 +121,16 @@
     align-items: flex-start;
     background-position: unset;
   }
+
+  @media (min-width: 1440px) {
+    align-items: center;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: 52px 56px;
+    height: 170px;
+    width: 318px;
+    background-position: top;
+  }
 }
 
 .advantages__item--ecology {
@@ -112,6 +150,16 @@
     justify-content: flex-start;
     align-items: flex-start;
     background-position: 0% 2%;
+  }
+
+  @media (min-width: 1440px) {
+    align-items: center;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: 52px 56px;
+    height: 170px;
+    width: 317px;
+    background-position: top;
   }
 }
 
@@ -137,6 +185,11 @@
     padding-left: 72px;
     text-align: start;
   }
+
+  @media (min-width: 1440px) {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 .advantages__image {
@@ -154,5 +207,10 @@
     line-height: 36px;
     margin-bottom: 10px;
     padding-left: 72px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-left: 0;
+    text-align: center;
   }
 }
