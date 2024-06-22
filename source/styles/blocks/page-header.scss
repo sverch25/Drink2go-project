@@ -81,7 +81,6 @@
   @media (min-width: 768px) {
     width: fit-content;
     border: none;
-    padding: 32px 20px;
     height: 80px;
   }
 }
@@ -90,10 +89,12 @@
   .nav__item.current-page {
     border-bottom: 2px solid #7859cf;
   }
-}
 
-@media (min-width: 768px) {
   .nav__link.current-page {
     color: #7859cf;
+  }
+
+  .nav__link {
+    padding: 32px 20px;
   }
 }
