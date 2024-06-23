@@ -52,10 +52,6 @@ fieldset {
   border: none;
   padding: 0;
   margin: 0;
-
-  @media (min-width: 768px) {
-    min-width: 222px;
-  }
 }
 
 img {

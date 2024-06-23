@@ -9,6 +9,13 @@
     justify-content: space-between;
     border: none;
   }
+
+  @media (min-width: 1440px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 80px;
+  }
 }
 
 .footer__social-list {
@@ -27,6 +34,13 @@
 .footer__logo-link {
   height: 36px;
   padding-left: 20px;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 0;
+  }
 }
 
 .footer__eshop {
@@ -39,6 +53,10 @@
     flex-shrink: 0;
     border: none;
     width: 223px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 317px;
   }
 }
 
@@ -71,6 +89,10 @@
     flex-shrink: 0;
     border: none;
     width: 222px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 318px;
   }
 }
 
@@ -115,6 +137,10 @@
     border: none;
     width: 223px;
   }
+
+  @media (min-width: 1440px) {
+    width: 317px;
+  }
 }
 
 .footer__contacts-icon {
@@ -128,6 +154,10 @@
 
   @media (min-width: 768px) {
     width: 209px;
+  }
+
+  @media (min-width: 1440px) {
+    width: fit-content;
   }
 }
 
@@ -164,6 +194,10 @@
   @media (min-width: 768px) {
     padding: 30px 0 40px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 20px 0 40px;
+  }
 }
 
 .footer__developer-link {
@@ -182,5 +216,27 @@
     display: flex;
     gap: 30px;
     padding: 30px 20px 0 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__logo-link::after {
+    content: "Интернет-магазин кофейных напитков";
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: $font-weight-regular;
+    width: 318px;
+    height: 20px;
+  }
+
+  .footer__main-container {
+    display: flex;
+    padding: 40px 40px 0;
+    gap: 30px;
+  }
+
+  .footer__container {
+    padding: 9px 0 0;
   }
 }

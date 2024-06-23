@@ -88,6 +88,10 @@
   @media (min-width: 768px) {
     width: 223px;
   }
+
+  @media (min-width: 1440px) {
+    width: 318px;
+  }
 }
 .noUi-horizontal .noUi-handle {
   width: 24px;

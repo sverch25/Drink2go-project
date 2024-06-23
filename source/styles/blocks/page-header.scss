@@ -122,7 +122,7 @@
   top: 61px;
   display: block;
   background-color: #ffffff;
-  left: 0px;
+  left: 0;
 
   @media (min-width: 768px) {
     position: static;
@@ -139,7 +139,6 @@
   @media (min-width: 768px) {
     display: flex;
   }
-
 }
 
 .nav__item {
