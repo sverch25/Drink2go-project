@@ -1,8 +1,8 @@
 export default function priceSlider() {
   const sliderElement = document.querySelector('.catalog__price__slider');
   const formElement = document.querySelector('.catalog__form');
-  const valueElementMin = document.querySelector('.catalog__price-value-min');
-  const valueElementMax = document.querySelector('.catalog__price-value-max');
+  const valueElementMin = document.querySelector('.catalog__price-value--min');
+  const valueElementMax = document.querySelector('.catalog__price-value--max');
   const inputs = [valueElementMin, valueElementMax];
 
   noUiSlider.create(sliderElement, {
@@ -41,9 +41,6 @@ export default function priceSlider() {
       if (evt.key === 'Enter') {
         sliderElement.noUiSlider.setHandle(handle, input.value);
       }
-    });
-    input.addEventListener('click', () => {
-      input.value = '';
     });
   });
 }

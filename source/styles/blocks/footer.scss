@@ -240,3 +240,45 @@
     padding: 9px 0 0;
   }
 }
+
+.footer__developer-icon {
+  color: #bdbdbd;
+}
+
+.footer__developer-icon:hover {
+  color: #7859cf;
+}
+
+.footer__developer-icon:active {
+  color: #593cac;
+}
+
+.footer__social-icon {
+  color: #bdbdbd;
+}
+
+.footer__social-item:hover {
+  background-color: #f0ebff;
+}
+
+.footer__social-item:hover .footer__social-icon {
+  color: #7859cf;
+}
+
+.footer__social-item:active {
+  background-color: rgba(120, 89, 207, 0.25);
+}
+
+.footer__social-item:active .footer__social-icon {
+  color: #7859cf;
+}
+
+.footer__eshop-link:hover,
+.footer__media-link:hover {
+  color: #9070ec;
+}
+
+.footer__eshop-link:active,
+.footer__media-link:active {
+  color: #593cac;
+}

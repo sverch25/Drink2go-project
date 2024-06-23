@@ -13,6 +13,14 @@
   padding: 0;
 }
 
+.button:hover {
+  background-color: #9070ec;
+}
+
+.button:active {
+  background-color: #593cac;
+}
+
 .catalog__form-button-submit {
   width: 280px;
   font-size: 16px;
@@ -40,6 +48,10 @@
   @media (min-width: 1440px) {
     width: 149px;
   }
+}
+
+.catalog__form-button-reset:hover {
+  color: #ffffff;
 }
 
 .catalog__item-button {

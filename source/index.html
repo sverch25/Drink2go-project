@@ -43,17 +43,17 @@
         </ul>
       </nav>
       <div class="page-header__container">
-        <button class="page-header__icon--user" type="button">
+        <button class="page-header__icon page-header__icon--user" type="button">
           <svg class="page-header__sign-in-icon" width="16" height="16">
             <use href="icons/stack.svg#mobile-user"></use>
           </svg>
         </button>
-        <button class="page-header__icon--basket" type="button">
+        <button class="page-header__icon page-header__icon--basket" type="button">
           <svg class="page-header__basket-icon" width="16" height="16">
             <use href="icons/stack.svg#mobile-basket"></use>
           </svg>
         </button>
-        <button class="page-header__icon--menu js-toggle-button" type="button">
+        <button class="page-header__icon page-header__icon--menu js-toggle-button" type="button">
           <svg class="page-header__menu-icon-open" width="16" height="16">
             <use href="icons/stack.svg#mobile-menu"></use>
           </svg>
@@ -201,11 +201,11 @@
                   <legend class="catalog__price-title">Цена</legend>
                   <div class="catalog__price__slider" id="slider"></div>
                   <p class="catalog__price__field">
-                    <input class="catalog__price-value-min" type="text" placeholder="0" min="0" max="1000">
+                    <input class="catalog__price-value catalog__price-value--min" type="text" placeholder="0" min="0" max="1000">
                     <svg class="catalog__price-divider" width="8" height="2">
                       <use href="icons/stack.svg#catalog-divider"></use>
                     </svg>
-                    <input class="catalog__price-value-max" type="text" max="1000" min="0" value="900">
+                    <input class="catalog__price-value catalog__price-value--max" type="text" max="1000" min="0" value="900">
                   </p>
                 </fieldset>
                 <fieldset class="catalog__milk">
@@ -289,7 +289,7 @@
           </div>
           <div class="catalog__sort">
             <span class="catalog__sort-heading">Сортировка:</span>
-            <select>
+            <select class="catalog__select">
               <option class="catalog__sort-option" value="default" selected>по умолчанию</option>
               <option class="catalog__sort-option" value="list">список товаров</option>
               <option class="catalog__sort-option" value="cards">список карточек</option>
@@ -565,7 +565,7 @@
       <section class="footer__developer">
         <div class="footer__developer-container">
           <span class="footer__developer-text">Разработано в</span>
-          <a class="footer__developer-link" href="#">
+          <a class="footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="footer__developer-icon" width="112" height="16">
               <use href="icons/stack.svg#academy-link"></use>
             </svg>
