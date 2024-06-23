@@ -19,6 +19,10 @@ html {
   grid-template-rows: auto 1fr auto;
 }
 
+.disabled {
+  display: none;
+}
+
 body {
   position: relative;
   min-height: 100%;

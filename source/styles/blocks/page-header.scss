@@ -129,17 +129,12 @@
 .page-header__nav {
   position: absolute;
   top: 61px;
-  display: block;
   background-color: #ffffff;
   left: 0;
 
   @media (min-width: 768px) {
     position: static;
   }
-}
-
-.nav__list {
-  display: none;
 }
 
 .active {

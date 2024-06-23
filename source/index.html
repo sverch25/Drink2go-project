@@ -15,7 +15,7 @@
 
 <body class="page__body">
   <div class="wrapper">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <a class="page-header__logo" href="index.html">
         <picture>
           <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/desktop-logo.svg" width="170"
@@ -27,7 +27,7 @@
         </picture>
       </a>
       <nav class="page-header__nav">
-        <ul class="nav__list active">
+        <ul class="nav__list disabled">
           <li class="nav__item current-page">
             <a class="nav__link current-page" href="index.html" aria-current="page">главная</a>
           </li>
@@ -54,10 +54,10 @@
           </svg>
         </button>
         <button class="page-header__icon--menu js-toggle-button" type="button">
-          <svg class="page-header__menu-icon" width="16" height="16">
+          <svg class="page-header__menu-icon-open" width="16" height="16">
             <use href="icons/stack.svg#mobile-menu"></use>
           </svg>
-          <svg class="page-header__menu-icon visually-hidden" width="16" height="16">
+          <svg class="page-header__menu-icon-close visually-hidden" width="16" height="16">
             <use href="icons/stack.svg#close-button"></use>
           </svg>
         </button>
@@ -65,48 +65,101 @@
     </header>
     <main class="main-page">
 
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <h1 class="hero__heading visually-hidden">Магазин кофе Drink2Go</h1>
-        <div class="hero__slider">
+        <div class="hero__slider slider-pagination">
           <button class="hero__slider-button slider-button-prev" type="button">
             <svg class="hero__slider-button-icon" width="20" height="20">
               <use href="icons/stack.svg#arrow-vektor"></use>
             </svg>
           </button>
-          <picture>
-            <source type="image/png" media="(min-width: 1440px)"
-              srcset="./images/desktop_flat_white_img@1x.png 1x, ./images/desktop_flat_white_img@2x.png 2x" width="600"
-              height="600">
-            <source type="image/png" media="(min-width: 768px)"
-              srcset="./images/tablet_flat_white_img@1x.png 1x, ./images/tablet_flat_white_img@2x.png 2x" width="476"
-              height="476">
-            <img class="hero__image" src="./images/mobile_flat_white_img@1x.png" width="280" height="280"
-              alt="Банка с Флэт Уайт" srcset="./images/mobile_flat_white_img@2x.png 2x">
-          </picture>
           <button class="hero__slider-button slider-button-next" type="button">
             <svg class="hero__slider-button-icon" width="20" height="20">
               <use href="icons/stack.svg#arrow-vektor"></use>
             </svg>
           </button>
-          <div class="hero__slider-container">
-            <span class="hero__slider-badge">новинка!</span>
-            <h2 class="hero__slider-title">Декаф Флэт Уайт</h2>
-            <p class="hero__slider-text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
-              то, что нужно для расслабления после тяжёлого рабочего дня
-            </p>
-            <div class="hero__slider-price">
-              <span class="hero__slider-price old-price">295₽</span>
-              <span class="hero__slider-price new-price">225₽</span>
-              <button class="hero__button button" type="button">заказать</button>
-            </div>
-          </div>
+          <ul class="hero__slider-list">
+            <li class="hero__slider-item">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="./images/desktop_flat_white_img@1x.png 1x, ./images/desktop_flat_white_img@2x.png 2x"
+                  width="600" height="600">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="./images/tablet_flat_white_img@1x.png 1x, ./images/tablet_flat_white_img@2x.png 2x"
+                  width="476" height="476">
+                <img class="hero__image" src="./images/mobile_flat_white_img@1x.png" width="280" height="280"
+                  alt="Банка с Флэт Уайт" srcset="./images/mobile_flat_white_img@2x.png 2x">
+              </picture>
+              <div class="hero__slider-container">
+                <span class="hero__slider-badge">новинка!</span>
+                <h2 class="hero__slider-title">Декаф Флэт Уайт</h2>
+                <p class="hero__slider-text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                  —
+                  то, что нужно для расслабления после тяжёлого рабочего дня
+                </p>
+                <div class="hero__slider-price">
+                  <span class="hero__slider-price old-price">295₽</span>
+                  <span class="hero__slider-price new-price">225₽</span>
+                  <button class="hero__button button" type="button">заказать</button>
+                </div>
+              </div>
+            </li>
+            <li class="hero__slider-item visually-hidden">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="./images/desktop_lavender_img@1x.png 1x, ./images/desktop_lavender_img@2x.png 2x" width="600"
+                  height="600">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="./images/tablet_lavender_img@1x.png 1x, ./images/tablet_lavender_img@2x.png 2x" width="476"
+                  height="476">
+                <img class="hero__image" src="./images/mobile_lavender_img@1x.png" width="280" height="280"
+                  alt="Банка с Лавандовым латте" srcset="./images/mobile_lavender_img@2x.png 2x">
+              </picture>
+              <div class="hero__slider-container">
+                <span class="hero__slider-badge">новинка!</span>
+                <h2 class="hero__slider-title">Лавандовый Латте</h2>
+                <p class="hero__slider-text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+                  лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                </p>
+                <div class="hero__slider-price">
+                  <span class="hero__slider-price old-price">285₽</span>
+                  <span class="hero__slider-price new-price">265₽</span>
+                  <button class="hero__button button" type="button">заказать</button>
+                </div>
+              </div>
+            </li>
+            <li class="hero__slider-item visually-hidden">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)"
+                  srcset="./images/desktop_espresso_img@1x.png 1x, ./images/desktop_espresso_img@2x.png 2x" width="600"
+                  height="600">
+                <source type="image/png" media="(min-width: 768px)"
+                  srcset="./images/tablet_espresso_img@1x.png 1x, ./images/tablet_espresso_img@2x.png 2x" width="476"
+                  height="476">
+                <img class="hero__image" src="./images/mobile_espresso_img@1x.png" width="280" height="280"
+                  alt="Банка с эспрессо" srcset="./images/mobile_espresso_img@2x.png 2x">
+              </picture>
+              <div class="hero__slider-container">
+                <span class="hero__slider-badge">новинка!</span>
+                <h2 class="hero__slider-title">Тройной Эспрессо</h2>
+                <p class="hero__slider-text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из
+                  Колумбии покажет вам, что такое настоящая бодрость
+                </p>
+                <div class="hero__slider-price">
+                  <span class="hero__slider-price old-price">395₽</span>
+                  <span class="hero__slider-price new-price">375₽</span>
+                  <button class="hero__button button" type="button">заказать</button>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
         <ul class="hero__slider-pagination">
           <li class="hero__slider-pagination-item">
             <button class="hero__slider-pagination-btn active-btn" type="button" name="first-img"></button>
           </li>
           <li class="hero__slider-pagination-item">
-            <button class="hero__slider-pagination-btn" type="button" name="secon-img"></button>
+            <button class="hero__slider-pagination-btn" type="button" name="second-img"></button>
           </li>
           <li class="hero__slider-pagination-item">
             <button class="hero__slider-pagination-btn" type="button" name="third-img"></button>
@@ -115,7 +168,7 @@
       </section>
 
 
-      <section class="advantages">
+      <section class="advantages" data-test="features">
         <div class="advantages__container">
           <span class="advantages__badge">преимущества</span>
           <h2 class="advantages__heading">Главные причины выбрать Drink2Go</h2>
@@ -141,7 +194,7 @@
         </div>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <div class="catalog__heading-container">
           <span class="catalog__badge">каталог</span>
           <h2 class="catalog__heading">Каталог кофейных напитков</h2>
@@ -154,11 +207,11 @@
                   <legend class="catalog__price-title">Цена</legend>
                   <div class="catalog__price__slider" id="slider"></div>
                   <p class="catalog__price__field">
-                    <input class="catalog__price-value" type="number" placeholder="0" min="0" max="1000">
+                    <input class="catalog__price-value-min" type="text" placeholder="0" min="0" max="1000">
                     <svg class="catalog__price-divider" width="8" height="2">
                       <use href="icons/stack.svg#catalog-divider"></use>
                     </svg>
-                    <input class="catalog__price-value" type="number" max="1000" min="0" value="900">
+                    <input class="catalog__price-value-max" type="text" max="1000" min="0" value="900">
                   </p>
                 </fieldset>
                 <fieldset class="catalog__milk">
@@ -403,7 +456,7 @@
           </ul>
         </div>
       </section>
-      <section class="map">
+      <section class="map" data-test="map">
         <picture>
           <source type="image/png" media="(min-width: 1440px)"
             srcset="./images/desktop-map@1x.png 1x, ./images/desktop-map@2x.png 2x" width="1440" height="540">
@@ -414,7 +467,7 @@
         </picture>
       </section>
     </main>
-    <footer>
+    <footer class="footer" data-test="footer">
       <div class="footer__main-container">
         <section class="footer__social">
           <a class="footer__logo-link" href="#">

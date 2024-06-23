@@ -5,17 +5,17 @@
   padding-bottom: 60px;
 
   @media (min-width: 768px) {
-    padding: 60px 20px 0 20px;
+    padding: 60px 20px 0;
     background-image: linear-gradient(to bottom, #f3ebe1 640px, #ffffff 15%);
   }
 
   @media (min-width: 1440px) {
     background-image: none;
-    padding: 30px 40px 60px 40px;
+    padding: 30px 40px 60px;
   }
 }
 
-.hero__slider {
+.hero__slider-item {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -24,7 +24,7 @@
     flex-direction: column-reverse;
   }
 
-    @media (min-width: 1440px) {
+  @media (min-width: 1440px) {
     flex-direction: row;
     justify-content: center;
     gap: 30px;
@@ -60,6 +60,10 @@
   }
 }
 
+.active-btn {
+  background-color: #7859cf;
+}
+
 .hero__image {
   margin-bottom: 10px;
 
@@ -73,12 +77,10 @@
   flex-direction: column;
   align-items: center;
 
-    @media (min-width: 1440px) {
+  @media (min-width: 1440px) {
     align-items: flex-start;
   }
 }
-
-
 
 .hero__slider-button {
   width: 20px;
@@ -94,7 +96,7 @@
     width: 80px;
   }
 
-    @media (min-width: 1440px) {
+  @media (min-width: 1440px) {
     height: 714px;
   }
 }
@@ -155,7 +157,7 @@
     line-height: 32px;
   }
 
-    @media (min-width: 1440px) {
+  @media (min-width: 1440px) {
     text-align: start;
     margin-bottom: 40px;
     width: 625px;
@@ -163,7 +165,6 @@
 }
 
 .hero__slider-price {
-
   @media (min-width: 768px) {
     margin-bottom: 20px;
   }

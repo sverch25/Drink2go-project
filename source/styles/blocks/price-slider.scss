@@ -1,0 +1,52 @@
+.noUi-connect,
+.noUi-origin {
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 255px;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform-style: preserve-3d;
+  transform-origin: 0 0;
+  transform-style: flat;
+
+  @media (min-width: 768px) {
+    width: 201px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 294px;
+  }
+}
+
+.noUi-horizontal {
+  height: 2px;
+  width: 280px;
+
+  @media (min-width: 768px) {
+    width: 223px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 318px;
+  }
+}
+
+.noUi-base,
+.noUi-connects {
+  width: 262px;
+  height: 4px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    width: 208px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 301px;
+  }
+}

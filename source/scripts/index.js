@@ -1,10 +1,7 @@
-const sliderElement = document.querySelector('.catalog__price__slider');
+import mobileToggle from './mobile-toggle';
+import priceSlider from './price-slider';
 
-noUiSlider.create(sliderElement, {
-  range: {
-    min: 0,
-    max: 1000,
-  },
-  start: [25, 900],
-  connect: [false, true, false],
-});
+
+priceSlider();
+mobileToggle();
+

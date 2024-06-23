@@ -3,7 +3,7 @@
   background-color: #f8f8f8;
 
   @media (min-width: 768px) {
-    padding: 80px 20px 90px 20px;
+    padding: 80px 20px 90px;
   }
 
   @media (min-width: 1440px) {
@@ -40,19 +40,39 @@
   }
 }
 
-.catalog__price-value {
+.catalog__price-value-min {
   width: 118px;
   height: 40px;
   border-radius: 4px;
   border: 2px #9070ec solid;
   font-family: $font-family;
 
+  @media (min-width: 768px) {
+    width: 87px;
+  }
+
   @media (min-width: 1440px) {
     width: 134px;
   }
 }
 
-.catalog__radio[type="radio"]:checked+.catalog__control-mark {
+.catalog__price-value-max {
+  width: 118px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px #9070ec solid;
+  font-family: $font-family;
+
+  @media (min-width: 768px) {
+    width: 87px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 134px;
+  }
+}
+
+.catalog__radio[type="radio"]:checked + .catalog__control-mark {
   background-image: url("../../icons/form-radio.svg");
   background-size: 16px 16px;
   background-repeat: no-repeat;
@@ -117,11 +137,11 @@
   transition: left 0.5s ease-in-out, width 1.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.control__switch:checked+.control__switch_toggle {
+.control__switch:checked + .control__switch_toggle {
   background: #7859cf;
 }
 
-.control__switch:checked+.control__switch_toggle::after {
+.control__switch:checked + .control__switch_toggle::after {
   left: calc(100% - 2px);
   transform: translateX(-100%);
 }
@@ -130,22 +150,22 @@
   pointer-events: none;
 }
 
-.control__switch:disabled+.control__switch_toggle {
+.control__switch:disabled + .control__switch_toggle {
   cursor: not-allowed;
   background: #eaeaea;
 }
 
-.control__switch:disabled+.control__switch_toggle::after {
+.control__switch:disabled + .control__switch_toggle::after {
   background: #f8f8f8;
 }
 
-.control__switch:focus+.control__switch_toggle::before,
-.control__label:active .control__switch:not([disabled])+.control__switch_toggle::before {
+.control__switch:focus + .control__switch_toggle::before,
+.control__label:active .control__switch:not([disabled]) + .control__switch_toggle::before {
   outline: 2px solid #0cdb51;
   outline-offset: 2px;
 }
 
-.control__label:active .control__switch:not([disabled])+.control__switch_toggle::after {
+.control__label:active .control__switch:not([disabled]) + .control__switch_toggle::after {
   width: 70px;
 }
 
